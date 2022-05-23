@@ -22,5 +22,12 @@ public class EjercicioBs3SpringApplication {
 	CommandLineRunner saludo2(){
 		return new Segunda();
 	}
+	@Bean
+	CommandLineRunner saludo3(){
+		return new Tercera();
+	}
 
 }
+//Los mensajes se muestran en orden de creación
+// y PostConstruct que es la primera se ejecuta
+// antes de iniciar el programa en el servidor
